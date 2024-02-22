@@ -1,0 +1,10 @@
+[
+  {
+    "path": "/",
+    "methods": "GET",
+    "controller": "Welcome",
+    "action": "index",
+    "name": "",
+    "constraints": {}
+  }
+]

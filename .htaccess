@@ -1,0 +1,10 @@
+<IfModule !mod_rewrite.c>
+    LoadModule rewrite_module modules/mod_rewrite.so
+</IfModule>
+RewriteEngine On
+
+Options -Indexes -MultiViews
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php [L]

@@ -1,0 +1,73 @@
+/*
+ * ==================================================
+ * CSS pour la fonction display_var
+ * ==================================================
+ */
+
+.display-var-container {
+    background-color: #1d1b1b;
+    border: 1px solid #444;
+    padding: 10px;
+    font-family: "Segoe UI", sans-serif;
+    line-height: 2;
+    white-space: pre-wrap;
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.display-var-container pre {
+    margin: 0 0 10px 0;
+    padding: 20px;
+    background-color: #2d2d2d;
+    color: floralwhite;
+    font-size: 13px;
+    font-family: inherit;
+    overflow-x: auto;
+    display: block;
+}
+
+#caller-file {
+    font-size: 14px;
+    color: white;
+}
+
+/*
+ * Supprime la marge inférieure du dernier élément <pre> et du dernier conteneur toggle.
+ *
+ * Cela évite un excès d'espace inutile dans la mise en page,
+ * car le padding existant du display-var-container fournit déjà un espacement suffisant.
+ */
+.display-var-container pre:last-child,
+.toggle-container:last-child  {
+    margin-bottom: 0;
+}
+
+.display-var-container pre:hover {
+    background-color: #333;
+}
+
+.toggle-container {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.toggle-button {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Responsivité */
+@media (max-width: 600px) {
+    .display-var-container {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
